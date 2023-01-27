@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DataAccess;
+using DataAccess.repositories;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TestCrud.Models;
 
@@ -12,12 +14,23 @@ namespace TestCrud.Controllers
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
+           // RoleRepository roleRepository =   new RoleRepository();
+           //var roles =  roleRepository.obtener();
+           // return Ok(roles);
             return View();
         }
 
+        [HttpGet]
+        //public IActionResult test()
+        //{
+        //    RoleRepository roleRepository = new RoleRepository();
+        //    var roles = roleRepository.obtener();
+        //    return Ok(roles);
+            
+        //}
         public IActionResult Privacy()
         {
             return View();

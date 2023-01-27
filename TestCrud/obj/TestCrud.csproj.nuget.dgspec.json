@@ -4,6 +4,21 @@
     "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\TestCrud\\TestCrud.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\TestCrud\\TestCrud.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +47,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +63,26 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
