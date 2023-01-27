@@ -7,8 +7,24 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Domain/1.0.0": {
+        "dependencies": {
+          "DataAccess": "1.0.0"
+        },
         "runtime": {
           "Domain.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "runtime": {
+          "DataAccess.dll": {}
+        }
+      },
+      "EntityFramework/6.0.0.0": {
+        "runtime": {
+          "EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.400.420.21404"
+          }
         }
       }
     }
@@ -16,6 +32,16 @@
   "libraries": {
     "Domain/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntityFramework/6.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

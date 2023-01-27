@@ -1878,6 +1878,19 @@
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -6380,11 +6393,17 @@
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
       "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "DataAccess >= 1.0.0",
+      "Domain >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 5.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.7",
@@ -6426,6 +6445,9 @@
           "projectReferences": {
             "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj": {
               "projectPath": "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj"
+            },
+            "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\Domain\\Domain.csproj"
             }
           }
         }

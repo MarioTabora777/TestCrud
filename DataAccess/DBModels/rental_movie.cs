@@ -29,6 +29,9 @@ namespace DataAccess.DBModels
         public DateTime transaction_date { get; set;  } 
 
         public double transaction_price { get; set; }
+        public bool is_returned { get; set; }
+        public DateTime? returned_date { get; set; }
+
 
     }
 }

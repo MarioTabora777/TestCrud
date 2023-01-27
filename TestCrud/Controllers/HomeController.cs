@@ -1,7 +1,9 @@
 ﻿using DataAccess;
 using DataAccess.repositories;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Policy;
 using TestCrud.Models;
 
 namespace TestCrud.Controllers
@@ -31,6 +33,26 @@ namespace TestCrud.Controllers
             return Ok(roles);
             
         }
+
+
+     
+        [BindProperty]
+        public UserModelLogin userModelLogin { get; set; }
+
+        [HttpPost]
+        public IActionResult Login()
+        {
+           var user =  userModelLogin.login();
+
+            if (user.rol_id == 1)
+                return Redirect("Privacy");
+            else 
+                return Ok("Hola");
+
+
+        }
+
+
         public IActionResult Privacy()
         {
             return View();

@@ -28,9 +28,10 @@ namespace DataAccess
         [StringLength(50)]
         public string id_document { get; set; }
 
+        public bool is_active { get; set; } = true;
         public int? rol_id { get; set; }
 
-        public int? is_active { get; set; }
+       
         [ForeignKey("rol_id")]
         public virtual role role { get; set; }
     }

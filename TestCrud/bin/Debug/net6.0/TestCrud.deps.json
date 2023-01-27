@@ -9,6 +9,7 @@
       "TestCrud/1.0.0": {
         "dependencies": {
           "DataAccess": "1.0.0",
+          "Domain": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "5.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7",
@@ -1097,6 +1098,14 @@
         "runtime": {
           "DataAccess.dll": {}
         }
+      },
+      "Domain/1.0.0": {
+        "dependencies": {
+          "DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "Domain.dll": {}
+        }
       }
     }
   },
@@ -1835,6 +1844,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

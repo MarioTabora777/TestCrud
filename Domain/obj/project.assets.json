@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DataAccess >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Tadeo Tabora\\.nuget\\packages\\": {},
@@ -39,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Tadeo Tabora\\Documents\\GitHub\\TestCrud\\DataAccess\\DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
