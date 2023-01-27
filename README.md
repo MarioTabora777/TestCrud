@@ -11,6 +11,10 @@ también me faltó terminar de estructurar la capa de dominio, ya que ejecuto la
 consultados desde los controladores. 
 
 En resumen el proyecto está estructurado a que en cierto punto haya poca redundancia de código , que sea escalable y que cada componente tenga responsabilidad única.
+  
+  por el lado del diseño, me faltó muchísimo,hubiera hecho una pantalla más agradable y con pocos elementos innecesarios, reducit espacios en blanco, etc.
+  
+  Cabe recalcar que manejé una parte de la estructuración de las tablas en SQL Server a través de migration de Entity Framework.
 
 
 
