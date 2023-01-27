@@ -14,8 +14,8 @@ namespace DataAccess
 
         internal static string Conectionstring;
         public TestCrudDBContext()
-        : base("data source=Tadeo-Tabora;initial catalog=TestCrud;persist security info=True;user id=sa;password=Hol@Hol@888;MultipleActiveResultSets=True;App=EntityFramework")
-      // : base(Conectionstring)
+        //: base("data source=Tadeo-Tabora;initial catalog=TestCrud;persist security info=True;user id=sa;password=Hol@Hol@888;MultipleActiveResultSets=True;App=EntityFramework")
+      : base(Conectionstring)
         {
 
 
