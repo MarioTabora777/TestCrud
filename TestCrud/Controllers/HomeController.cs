@@ -25,17 +25,16 @@ namespace TestCrud.Controllers
             return View();
         }
 
-        [HttpGet]
-        public IActionResult test()
+        public IActionResult Register()
         {
-            RoleRepository roleRepository = new RoleRepository();
-            var roles = roleRepository.obtener();
-            return Ok(roles);
-            
+            // RoleRepository roleRepository =   new RoleRepository();
+            //var roles =  roleRepository.obtener();
+            // return Ok(roles);
+            return View();
         }
 
 
-     
+
         [BindProperty]
         public UserModelLogin userModelLogin { get; set; }
 
@@ -45,10 +44,26 @@ namespace TestCrud.Controllers
            var user =  userModelLogin.login();
 
             if (user.rol_id == 1)
+                return Redirect("Register");
+            else
                 return Redirect("Privacy");
-            else 
-                return Ok("Hola");
 
+
+        }
+
+
+        [BindProperty]
+        public UserModelBuild userRegistration { get; set; }
+
+        [HttpPost]
+        public IActionResult GuardarUsuario()
+        {
+            UserModelBuild newUser = new UserModelBuild(userRegistration);
+            newUser.guardar();
+            var user = userRegistration.guardar();
+
+
+            return Ok(user);
 
         }
 

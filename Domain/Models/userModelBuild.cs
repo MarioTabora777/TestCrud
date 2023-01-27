@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    internal class UserModelBuild:UserModelMaster 
+    public class UserModelBuild:UserModelMaster 
     {
 
         public UserModelBuild() { 
