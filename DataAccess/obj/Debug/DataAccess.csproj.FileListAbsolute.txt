@@ -18,3 +18,8 @@ C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.
 C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
 C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.First.resources
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.cache
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.foreignkey.resources
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.modelsMovie.resources
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.modelgenre.resources

@@ -14,7 +14,7 @@ namespace DataAccess
 
         [Column("user")]
         [StringLength(50)]
-        public string user1 { get; set; }
+        public string _user { get; set; }
 
         [StringLength(50)]
         public string password { get; set; }
@@ -31,7 +31,7 @@ namespace DataAccess
         public int? rol_id { get; set; }
 
         public int? is_active { get; set; }
-
+        [ForeignKey("rol_id")]
         public virtual role role { get; set; }
     }
 }

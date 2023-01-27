@@ -24,13 +24,13 @@ namespace TestCrud.Controllers
         }
 
         [HttpGet]
-        //public IActionResult test()
-        //{
-        //    RoleRepository roleRepository = new RoleRepository();
-        //    var roles = roleRepository.obtener();
-        //    return Ok(roles);
+        public IActionResult test()
+        {
+            RoleRepository roleRepository = new RoleRepository();
+            var roles = roleRepository.obtener();
+            return Ok(roles);
             
-        //}
+        }
         public IActionResult Privacy()
         {
             return View();

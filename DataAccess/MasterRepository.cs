@@ -16,9 +16,10 @@ namespace DataAccess
         public MasterRepository()
         {
             string assemblyPath = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).FullName+ "\\TestCrud\\connectionstring.txt";
-            // Read the file as one string. 
+             
             string conectionstring = System.IO.File.ReadAllText(assemblyPath);
-            db = new TestCrudDBContext(conectionstring);
+                TestCrudDBContext.Conectionstring  = conectionstring;
+            db = new TestCrudDBContext();
         }
 
     }

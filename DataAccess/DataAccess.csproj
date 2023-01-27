@@ -71,19 +71,52 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBModels\genre.cs" />
+    <Compile Include="DBModels\movie.cs" />
+    <Compile Include="DBModels\rental_movie.cs" />
+    <Compile Include="DBModels\sale_movie.cs" />
     <Compile Include="MasterRepository.cs" />
+    <Compile Include="Migrations\202301271532383_First.cs" />
+    <Compile Include="Migrations\202301271532383_First.designer.cs">
+      <DependentUpon>202301271532383_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301271540143_foreignkey.cs" />
+    <Compile Include="Migrations\202301271540143_foreignkey.designer.cs">
+      <DependentUpon>202301271540143_foreignkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301271610220_modelsMovie.cs" />
+    <Compile Include="Migrations\202301271610220_modelsMovie.designer.cs">
+      <DependentUpon>202301271610220_modelsMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301271640596_modelgenre.cs" />
+    <Compile Include="Migrations\202301271640596_modelgenre.designer.cs">
+      <DependentUpon>202301271640596_modelgenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositories\RoleRepository.cs" />
-    <Compile Include="role.cs" />
+    <Compile Include="DBModels\role.cs" />
     <Compile Include="TestCrudDBContext.cs" />
-    <Compile Include="user.cs" />
+    <Compile Include="DBModels\user.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DBModels\" />
+    <EmbeddedResource Include="Migrations\202301271532383_First.resx">
+      <DependentUpon>202301271532383_First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301271540143_foreignkey.resx">
+      <DependentUpon>202301271540143_foreignkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301271610220_modelsMovie.resx">
+      <DependentUpon>202301271610220_modelsMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301271640596_modelgenre.resx">
+      <DependentUpon>202301271640596_modelgenre.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
