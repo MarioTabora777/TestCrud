@@ -92,10 +92,27 @@
     <Compile Include="Migrations\202301271640596_modelgenre.designer.cs">
       <DependentUpon>202301271640596_modelgenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301271859537_addPropietiesRentMovie.cs" />
+    <Compile Include="Migrations\202301271859537_addPropietiesRentMovie.designer.cs">
+      <DependentUpon>202301271859537_addPropietiesRentMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301271901454_PropietyNull.cs" />
+    <Compile Include="Migrations\202301271901454_PropietyNull.designer.cs">
+      <DependentUpon>202301271901454_PropietyNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301272042455_genreMovie.cs" />
+    <Compile Include="Migrations\202301272042455_genreMovie.designer.cs">
+      <DependentUpon>202301272042455_genreMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301272117191_is_active.cs" />
+    <Compile Include="Migrations\202301272117191_is_active.designer.cs">
+      <DependentUpon>202301272117191_is_active.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositories\RoleRepository.cs" />
     <Compile Include="DBModels\role.cs" />
+    <Compile Include="repositories\UserRepository.cs" />
     <Compile Include="TestCrudDBContext.cs" />
     <Compile Include="DBModels\user.cs" />
   </ItemGroup>
@@ -116,6 +133,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301271640596_modelgenre.resx">
       <DependentUpon>202301271640596_modelgenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301271859537_addPropietiesRentMovie.resx">
+      <DependentUpon>202301271859537_addPropietiesRentMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301271901454_PropietyNull.resx">
+      <DependentUpon>202301271901454_PropietyNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301272042455_genreMovie.resx">
+      <DependentUpon>202301272042455_genreMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301272117191_is_active.resx">
+      <DependentUpon>202301272117191_is_active.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -21,5 +21,10 @@ namespace DataAccess.DBModels
         public double rental_price { get; set; }
         public double sale_price { get; set; }
 
+        public int? genre_id { get; set; }
+
+        [ForeignKey("genre_id")]
+        public genre genre { get; set; }
+
     }
 }

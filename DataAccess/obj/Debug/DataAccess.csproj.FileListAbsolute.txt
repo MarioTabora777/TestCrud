@@ -23,3 +23,7 @@ C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.
 C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.foreignkey.resources
 C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.modelsMovie.resources
 C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.modelgenre.resources
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.addPropietiesRentMovie.resources
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.PropietyNull.resources
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.genreMovie.resources
+C:\Users\Tadeo Tabora\Documents\GitHub\TestCrud\DataAccess\obj\Debug\DataAccess.Migrations.is_active.resources

@@ -1,7 +1,9 @@
 ﻿using DataAccess;
 using DataAccess.repositories;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Policy;
 using TestCrud.Models;
 
 namespace TestCrud.Controllers
@@ -23,14 +25,49 @@ namespace TestCrud.Controllers
             return View();
         }
 
-        [HttpGet]
-        public IActionResult test()
+        public IActionResult Register()
         {
-            RoleRepository roleRepository = new RoleRepository();
-            var roles = roleRepository.obtener();
-            return Ok(roles);
-            
+            // RoleRepository roleRepository =   new RoleRepository();
+            //var roles =  roleRepository.obtener();
+            // return Ok(roles);
+            return View();
         }
+
+
+
+        [BindProperty]
+        public UserModelLogin userModelLogin { get; set; }
+
+        [HttpPost]
+        public IActionResult Login()
+        {
+           var user =  userModelLogin.login();
+
+            if (user.rol_id == 1)
+                return Redirect("Register");
+            else
+                return Redirect("Privacy");
+
+
+        }
+
+
+        [BindProperty]
+        public UserModelBuild userRegistration { get; set; }
+
+        [HttpPost]
+        public IActionResult GuardarUsuario()
+        {
+            UserModelBuild newUser = new UserModelBuild(userRegistration);
+            newUser.guardar();
+            var user = userRegistration.guardar();
+
+
+            return Ok(user);
+
+        }
+
+
         public IActionResult Privacy()
         {
             return View();
